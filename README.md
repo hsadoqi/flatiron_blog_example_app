@@ -45,6 +45,8 @@ User -< Blog -< Comments
 
 ### Basic Blog Functionality
 
+[ ] User can view all blog posts
+
 [ ] User can create a new blog post
 
 [ ] User can update their blog posts
@@ -80,3 +82,5 @@ rails db:seed
 [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 [Tools for an Awesome README](https://github.com/matiassingers/awesome-readme)
+
+[Faker Gem](https://github.com/faker-ruby/faker)
