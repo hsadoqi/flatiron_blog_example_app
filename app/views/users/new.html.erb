@@ -8,11 +8,6 @@
 
 
 <%= form_for @user do |f|%>
-<%= f.label :name %><br>
-<%= f.text_field :name %><br>
-<%= f.label :email %><br>
-<%= f.text_field :email %><br>
-<%= f.label :password %><br>
-<%= f.text_field :password %>
+<%= render partial: 'form', locals: {:f => f}%>
 <%= f.submit "Create new user"%>
 <% end %>

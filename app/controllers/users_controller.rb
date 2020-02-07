@@ -1,6 +1,16 @@
 class UsersController < ApplicationController
-    before_action :set_user, only: [:show]
+    before_action :set_user, only: [:show,  :edit, :update, :account]
 
+    def index 
+        @users = User.search(params[:search])
+    end
+
+    def welcome 
+    
+    end
+
+    def account 
+    end
 
     def show 
     end
@@ -14,10 +24,21 @@ class UsersController < ApplicationController
 
         if @user.save 
             redirect_to user_path(@user)
-        else 
+        else
             render :new
         end
 
+    end
+
+    def edit 
+    end
+
+    def update 
+        if @user.update(user_params)
+            redirect_to user_path(@user)
+        else 
+            render :edit
+        end
     end
 
     private 
