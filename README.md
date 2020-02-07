@@ -14,6 +14,29 @@ Flatiron Blog is primarily built using Rails, with a Sqlite3 database using the 
 
 ---
 
+## Schema
+
+User -< Blog -< Comments
+
+#### User
+
+- name
+- email
+- password
+
+#### Blog
+
+- title
+- content
+- date posted
+
+#### Comment
+
+- content
+- date posted
+
+---
+
 ### Basic User Functionality
 
 [ ] User can create a new account
