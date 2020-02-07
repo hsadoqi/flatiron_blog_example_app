@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    before_action :set_user, only: [:show,  :edit, :update, :account]
+    before_action :set_user, only: [:show,  :edit, :update, :account, :destroy]
 
     def index 
         @users = User.search(params[:search])
@@ -39,6 +39,11 @@ class UsersController < ApplicationController
         else 
             render :edit
         end
+    end
+
+    def destroy
+        @user.destroy 
+        redirect_to '/'
     end
 
     private 
