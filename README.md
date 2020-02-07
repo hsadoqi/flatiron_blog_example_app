@@ -12,8 +12,6 @@ The goal is to create a community for students to interact with one another via 
 
 Flatiron Blog is primarily built using Rails, with a Sqlite3 database using the Active Record pattern and library.
 
----
-
 ## Schema
 
 User -< Blog -< Comments
@@ -35,8 +33,6 @@ User -< Blog -< Comments
 - content
 - date posted
 
----
-
 ### Basic User Functionality
 
 [ ] User can create a new account
@@ -54,8 +50,6 @@ User -< Blog -< Comments
 [ ] User can update their blog posts
 
 [ ] User can delete blog posts
-
----
 
 ## Getting Started
 
